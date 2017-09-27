@@ -9,17 +9,17 @@
 				<p> Tools for monitoring network will be here next time</p>
 				<p>Under the text you can found link for chek-host site</p>
 		</div>
-		{% for post in posts %}
+		
+		<div>
+			<a href="https://check-host.net"><em><strong>Chek your host</strong></em></a>
+		</div>
+	{% for post in posts %}
 			<div>
 				<p>published: {{ post.published_date }}</p>
 				<h1><a href="">{{ post.title }}</a></h1>
 				<p>{{ post.text|linebreaksbr }}</p>
 			</div>
 		{% endfor %}
-		<div>
-			<a href="https://check-host.net"><em><strong>Chek your host</strong></em></a>
-		</div>
-	
 			
 	</body>
 </html>
